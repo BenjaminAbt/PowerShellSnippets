@@ -1,3 +1,5 @@
+[void] [System.Reflection.Assembly]::LoadWithPartialName("System.Drawing") 
+
 function ConvertTo-Png
 {
     [cmdletbinding()]
