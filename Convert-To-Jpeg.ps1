@@ -1,4 +1,4 @@
-function ConvertTo-Jpg
+function ConvertTo-Jpeg
 {
     [cmdletbinding()]
     param([Parameter(Mandatory=$true, ValueFromPipeline = $true)] $Path)
@@ -17,9 +17,4 @@ function ConvertTo-Jpg
 
  }
 
- #Use function:
- #Cd to directory w/ png files
- cd .\bin\pngTest
-
- #Run ConvertTo-Jpg function
- Get-ChildItem *.png | ConvertTo-Jpg
+ Get-ChildItem *.png | ConvertTo-Jpeg
